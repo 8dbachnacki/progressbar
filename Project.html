@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <progress id="progress" value="0" max="200">0%</progress>
+    <h6 id="show"></h6>
+
+    <button type="button" name="up" onclick="up()">UP</button>
+    <button type="button" name="down" onclick="down()">DOWN</button>
+  </body>
+  <script type= "text/javascript">
+    function up(){
+        var progress = document.getElementById('progress');
+        progress.value = progress.value +5;
+
+        var show = document.getElementById('show');
+        show.innerHTML = String(progress.value)
+    }
+    function down(){
+      var progress = document.getElementById('progress');
+      progress.value = progress.value -1;
+    }
+  </script>
+
+</html>
